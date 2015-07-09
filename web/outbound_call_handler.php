@@ -7,13 +7,12 @@
  *
  * This response handles the outbound call leg. It presents the option to accept or reject the incoming call to the outbound callee
  */
-include 'utils.php';
-
-varDumpToString($_REQUEST);
 
 $from = $_REQUEST['from'];
 $conferenceNumber = urldecode($_REQUEST['tag']);
 $inboundCallId = urldecode($_REQUEST['inboundCallId']);
+
+error_log("from: " . $from . ", conferenceNumber: " . $conferenceNumber . ", inboundCallId: " . $inboundCallId);
 
 
 header("content-type: text/xml");
