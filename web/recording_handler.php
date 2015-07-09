@@ -12,7 +12,7 @@ error_log("url: " . $url);
 
 $headers = array(
     'Content-Type:application/json',
-    'Authorization: Basic '. base64_encode("t-avh3tpbsp32mzfnsdsgfswy:bzyidfockbmm7d2waphnnszzgg34nzfogmpryzi") // <---token and password go here
+    'Authorization: Basic '. base64_encode("t-bfvjgfgm5ykqgtrjszet2ei:jrxmqybm5j32gkgc7msnlelq66d3h3tmtm4nr7y") // <---token and password go here
 );
 
 error_log("initializing curl");
