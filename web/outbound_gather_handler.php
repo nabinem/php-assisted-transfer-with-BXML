@@ -25,6 +25,6 @@ if ($digit == "1") // the call was accepted so just add the caller to the confer
 
 <?php }  else { ?>
     <Response>
-        <Redirect context="<?php echo $inboundCallId ?>" requestUrl="https://hidden-oasis-7486.herokuapp.com/inbound_voicemail_handler.php" requestUrlTimeout="5000"/>
+        <Redirect context="<?php echo $inboundCallId ?>" requestUrl="/inbound_voicemail_handler.php" requestUrlTimeout="6000"/>
     </Response>
 <?php } ?>

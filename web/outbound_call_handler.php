@@ -17,8 +17,8 @@ error_log("from: " . $from . ", conferenceNumber: " . $conferenceNumber . ", inb
 
 $ttsFriendly = "";
 
-for($i=0; $i<strlen($from); $i++) {
-    $ttsFriendly .= $from[$i] . " ";
+for($i=1; $i<strlen($from); $i++) { // start at [1] to remove the + sign
+    $ttsFriendly .= $from[$i] . ", ";
 }
 
 error_log("ttsFriendly: " . $ttsFriendly);
