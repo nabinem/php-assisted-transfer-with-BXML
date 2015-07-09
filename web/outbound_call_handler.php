@@ -15,6 +15,15 @@ $inboundCallId = $_REQUEST['inboundCallId'];
 error_log("from: " . $from . ", conferenceNumber: " . $conferenceNumber . ", inboundCallId: " . $inboundCallId);
 
 
+$ttsFriendly = "";
+
+for($i=0; $i<strlen($from); $i++) {
+    $ttsFriendly .= $from[$i] . "";
+}
+
+error_log("ttsFriendly: " . $ttsFriendly);
+
+
 header("content-type: text/xml");
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
