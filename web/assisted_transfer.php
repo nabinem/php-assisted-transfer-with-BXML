@@ -7,7 +7,6 @@
  *
  * This response speaks a sentence to the inbound caller, then calls out to the transfer number.
  */
-error_log("Request:" . implode($_REQUEST));
 
 $callId = $_REQUEST['callId']; // get the callId from the querystring
 $to = "3032288849"; // hard-coded outbound number here. Can and should be obtained from a DB look up.

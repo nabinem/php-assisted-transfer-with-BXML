@@ -9,8 +9,8 @@
  */
 
 $from = $_REQUEST['from'];
-$conferenceNumber = urldecode($_REQUEST['tag']);
-$inboundCallId = urldecode($_REQUEST['inboundCallId']);
+$conferenceNumber = $_REQUEST['tag'];
+$inboundCallId = $_REQUEST['inboundCallId'];
 
 error_log("from: " . $from . ", conferenceNumber: " . $conferenceNumber . ", inboundCallId: " . $inboundCallId);
 

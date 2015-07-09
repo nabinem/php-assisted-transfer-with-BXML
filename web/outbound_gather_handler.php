@@ -7,11 +7,11 @@
  *
  * This response determines the input from the gather and either connects the call to the conference or sends the original call leg to voice mail
  */
-error_log(implode($_REQUEST));
 
 $digit = $_REQUEST['digits'];
 $conferenceNumber = $_REQUEST['conferenceNumber'];
 $inboundCallId = $_REQUEST['inboundCallId'];
+
 error_log("digit: " . $digit . ", conferenceNumber: " . $conferenceNumber . ", inboundCallId: " . $inboundCallId);
 
 header("content-type: text/xml");
