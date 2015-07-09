@@ -18,7 +18,7 @@ header("content-type: text/xml");
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
 <Response>
-    <Call tag="<?php echo $conferenceNumber ?>" to="<?php echo $to ?>" from="<?php echo urlencode($conferenceNumber) ?>" requestUrl="/outbound_call_handler.php?inboundCallId=<?php echo $callId ?>" />
+    <Call tag="<?php echo $conferenceNumber ?>" to="<?php echo $to ?>" from="<?php echo $conferenceNumber ?>" requestUrl="/outbound_call_handler.php?inboundCallId=<?php echo $callId ?>" />
     <SpeakSentence locale="en_US" gender="female" voice="julie">Please wait while we transfer you to your party</SpeakSentence>
     <Conference from="<?php echo $conferenceNumber ?>" />
 </Response>
