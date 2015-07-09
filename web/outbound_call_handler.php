@@ -18,7 +18,7 @@ error_log("from: " . $from . ", conferenceNumber: " . $conferenceNumber . ", inb
 $ttsFriendly = "";
 
 for($i=0; $i<strlen($from); $i++) {
-    $ttsFriendly .= $from[$i] . "";
+    $ttsFriendly .= $from[$i] . " ";
 }
 
 error_log("ttsFriendly: " . $ttsFriendly);
