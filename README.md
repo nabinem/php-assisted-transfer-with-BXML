@@ -1,14 +1,20 @@
-# php-assisted-transfer-with-BXML
-This example app shows how to implement a simple assisted transfer flow using BXML.
+## php-assisted-transfer-with-BXML
+This project is provided as an example on how to how to implement a simple assisted transfer flow using BXML. The following features are demonstrated:
 
-Prereqs:
-<list>
-<li>A working PHP development environment, including composer</li>
-<li>A Bandwidth App Platform account (see here to sign up)</li>
-<li>A Heroku account</li>
-</list>
+* Using BXML for inbound call handling
+* Using BXML to make an outbound call
+* Using BXML to manage separate call flows for different call legs
+* Using BXML to conference separate call legs together
 
-Pull down the repo:
+## Before you start, make sure that you have the following:
+
+* A working PHP development environment, including composer
+* A Bandwidth App Platform account (see [here](https://catapult.inetwork.com/pages/signup.jsf) to sign up)
+* A Heroku account
+
+## First, get the code
+
+Pull down the repo as follows:
 
 ```sh
 $ git clone git@github.com:heroku/php-assisted-transfer-with-BXML.git # or clone your own fork
@@ -16,26 +22,40 @@ $ cd php-assisted-transfer-with-BXML
 $ composer update
 ```
 
+## Next, modify the code with your App Platform Account info
+
 Update the credentials by editing the web/recording_handler.php file and replacing the token:secret with your own App Platform token and secret. Edit the web/assisted_transfer.php file and change the $to variable to the phone number you want to transfer call to.
 
-Create an heroku app:
+## Deploy it to Heroku
+
+Create an Heroku app:
+
 ```sh
 $ create heroku
 ```
-Deploy to heroku:
+And deploy to it:
+
 ```sh
 $ git add .
 $ git commit -m "initial deployment"
 $ git push heroku master
 ```
 This will show the name of your app as follows:
-
+ ```sh
 remote:        https://<app-name>.herokuapp.com/ deployed to Heroku
+```
 
-Use that url to create an application in the App Platform dev console. Paste the heroku url in the Call Url field and add the php file /assisted_transfer.php. It will look like the following:
+## Create an App Platform application to route inbound calls to your Heroku app
 
-<TODO image here />
+First you'll want to get a phone number. See [here] (http://ap.bandwidth.com/docs/how-to-guides/buying-new-phone-numbers/) for ways to buy a phone number. 
 
-Now add a phone number to the app.
+Next, use the Heroku url to create an application in the App Platform dev console. see [here] (http://ap.bandwidth.com/docs/how-to-guides/configuring-apps-incoming-messages-calls/) for a detailed example of how to set up an application. Paste the Heroku url in the Call Url field and append the php file, assisted_transfer.php, to it. It will look like the following:
 
-When you call the phone number, you'll go through the full call flow.
+![App screenshot](https://github.com/BandwidthExamples/php-assisted-transfer-with-BXML/blob/master/appscreenshot.png)
+
+# IMPORTANT - make sure the the Callback HTTP method is set to GET. 
+This tells the App Platform to retrieve XML from the url. 
+
+Now add a phone number to the app by clicking the Add Phone Number button and selecting your phone number. 
+
+Now just call the number and you'll see BXML in action.
