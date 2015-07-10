@@ -53,7 +53,7 @@ Next, use the Heroku url to create an application in the App Platform dev consol
 
 ![App screenshot](https://github.com/BandwidthExamples/php-assisted-transfer-with-BXML/blob/master/appscreenshot.png)
 
-# VERY IMPORTANT - Make sure the the Callback HTTP method is set to GET. This tells the App Platform to retrieve XML from the url. 
+# VERY IMPORTANT - Make sure that the Callback HTTP method is set to GET. This tells the App Platform to retrieve XML from the url. 
 
 Now add a phone number to the app by clicking the Add Phone Number button and selecting your phone number. 
 
