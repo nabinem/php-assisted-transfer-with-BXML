@@ -17,7 +17,7 @@ This project is provided as an example on how to how to implement a simple assis
 Pull down the repo as follows:
 
 ```sh
-$ git clone git@github.com:heroku/php-assisted-transfer-with-BXML.git # or clone your own fork
+$ git clone https://github.com/BandwidthExamples/php-assisted-transfer-with-BXML.git # or clone your own fork
 $ cd php-assisted-transfer-with-BXML
 $ composer update
 ```
