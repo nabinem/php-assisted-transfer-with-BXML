@@ -49,7 +49,7 @@ remote:        https://<app-name>.herokuapp.com/ deployed to Heroku
 
 First you'll want to get a phone number. See [here] (http://ap.bandwidth.com/docs/how-to-guides/buying-new-phone-numbers/) for ways to buy a phone number. 
 
-Next, use the Heroku url to create an application in the App Platform dev console. See [here] (http://ap.bandwidth.com/docs/how-to-guides/configuring-apps-incoming-messages-calls/) for a detailed example of how to set up an application. Paste the Heroku url in the Call Url field and append the php file, assisted_transfer.php, to it. It will look like the following:
+Next, use the Heroku url to create an application in the App Platform dev console. See [here] (http://ap.bandwidth.com/docs/how-to-guides/configuring-apps-incoming-messages-calls/) for a detailed example of how to set up an application. Paste the Heroku url in the Call Url field and append the php file, assisted_transfer.php, to it. It will look like the following (note that the full Call Url will be something like https://hidden-oasis-7486.herokuapp.com/assisted_transfer.php):
 
 ![App screenshot](https://github.com/BandwidthExamples/php-assisted-transfer-with-BXML/blob/master/appscreenshot.png)
 
