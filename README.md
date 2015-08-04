@@ -31,7 +31,7 @@ Update the credentials by editing the web/recording_handler.php file and replaci
 Create an Heroku app:
 
 ```sh
-$ create heroku
+$ heroku create
 ```
 And deploy it:
 
