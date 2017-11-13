@@ -1,10 +1,18 @@
-# php-assisted-transfer-with-BXML
+<div align="center">
+
+# PHP Assisted Transfer With BXML
+
+<a href="http://dev.bandwidth.com"><img src="https://s3.amazonaws.com/bwdemos/BW-VMP.png"/></a>
+</div>
+
 This project is provided as an example on how to how to implement a simple assisted transfer flow using Bandwidth XML (BXML). The following features are demonstrated:
 
 * Using BXML for inbound call handling
 * Using BXML to make an outbound call
 * Using BXML to manage separate call flows for different call legs
 * Using BXML to conference separate call legs together
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Before you start, make sure that you have the following:
 
